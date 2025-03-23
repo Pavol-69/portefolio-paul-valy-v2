@@ -1,0 +1,74 @@
+@use "../../../index.scss" as *;
+
+.burger_btn_ctn {
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  width: 200px;
+}
+
+.burger_btn {
+  position: absolute;
+  height: 50px;
+  color: $wht;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: solid 1px $prm;
+  padding: 0px 20px;
+  right: -200px;
+  cursor: pointer;
+
+  @for $i from 1 through 5 {
+    &_#{$i} {
+      top: ($i - 1) * 50px;
+      &_nrm {
+        right: -200px;
+        animation: hide_menu 0.2s forwards ease-in-out;
+        animation-delay: ($i - 1) * 50ms;
+      }
+      &_rvs {
+        right: 0px;
+        animation: show_menu 0.2s forwards ease-in-out;
+        animation-delay: ($i - 1) * 50ms;
+      }
+    }
+  }
+
+  @for $i from 5 through 1 {
+    &_#{$i} {
+      &_rvs {
+        animation: show_menu 0.2s forwards ease-in-out;
+        animation-delay: (5-$i) * 50ms;
+      }
+    }
+  }
+}
+
+@keyframes hide_menu {
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+
+  50% {
+    opacity: 0;
+    right: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes show_menu {
+  0% {
+    opacity: 1;
+    right: 0px;
+  }
+
+  100% {
+    opacity: 0;
+    right: -200px;
+  }
+}

@@ -1,0 +1,41 @@
+@use "../../../index.scss" as *;
+
+.classic_menu_ctn {
+  height: 100%;
+}
+
+.classic_menu_btn {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  color: $wht;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.classic_menu_btn {
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  color: $wht;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.classic_menu_btn::after {
+  position: absolute;
+  top: 55px;
+  height: 2px;
+  width: 0px;
+  background-color: $wht;
+  content: "";
+  transition: 0.3s;
+}
+
+.classic_menu_btn:hover:after {
+  width: 100%;
+  content: "";
+}

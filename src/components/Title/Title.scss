@@ -1,0 +1,53 @@
+@use "../../index.scss" as *;
+
+.title_ctn {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.title_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.title_deg {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0), $blk);
+}
+
+.title_txt {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  font-family: Atkinson Hyperlegible Mono;
+  text-shadow: 2px 2px 2px $prm;
+  text-align: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.title_txt_name {
+  font-size: 7em;
+}
+
+.title_txt_job {
+  font-size: 4em;
+}
+
+@media (max-width: $mobile-size) {
+  .title_txt_name {
+    font-size: 3.5em;
+  }
+
+  .title_txt_job {
+    font-size: 2em;
+  }
+}

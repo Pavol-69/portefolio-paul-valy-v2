@@ -1,0 +1,42 @@
+@use "../../index.scss" as *;
+
+header {
+  border-bottom: 1px solid;
+  box-shadow: 0 0 10px $blk;
+  color: $prm;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  height: 80px;
+}
+
+.header {
+  &_opening {
+    height: 80px;
+    animation: opening 0.2s forwards ease-in-out;
+  }
+  &_closing {
+    height: 80+5 * 50px;
+    animation: closing 0.2s forwards ease-in-out;
+    animation-delay: 250ms;
+  }
+}
+
+@keyframes opening {
+  0% {
+    height: 80px;
+  }
+  100% {
+    height: 80+5 * 50px;
+  }
+}
+
+@keyframes closing {
+  0% {
+    height: 80+5 * 50px;
+  }
+  100% {
+    height: 80px;
+  }
+}

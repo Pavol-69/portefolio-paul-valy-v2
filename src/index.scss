@@ -1,0 +1,42 @@
+/*Couleurs*/
+$prm: rgba(200, 90, 0, 1);
+$blk: #242424;
+$wht: #ffffff;
+
+/*Taille écran*/
+$mobile-size: 800px;
+
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $wht;
+  background-color: $blk;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+.elm_ct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
