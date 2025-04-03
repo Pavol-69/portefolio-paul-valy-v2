@@ -1,0 +1,17 @@
+@use "../../index.scss" as *;
+
+.section_title {
+  width: 100%;
+  border-top: solid 1px $prm;
+  border-bottom: solid 1px $prm;
+  box-shadow: 0px 0px 10px $prm;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+@media (max-width: $mobile-size) {
+  .section_title {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,73 @@
+@use "../../index.scss" as *;
+
+.projects_ctn {
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.project {
+  position: relative;
+  width: 450px;
+  border: solid 1px $prm;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.project_img_ctn {
+  height: 300px;
+  width: 100%;
+}
+
+.project_img_ctn img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.tools_ctn {
+  flex-wrap: wrap;
+}
+
+.tool_ctn {
+  height: 30px;
+  width: 30px;
+  margin: 9px;
+}
+
+.tool_ctn img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project_menu {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.project:hover > .project_menu {
+  opacity: 1;
+}
+
+.openclassroom {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+@media (max-width: $mobile-size) {
+  .projects_ctn {
+    width: 300px;
+  }
+}

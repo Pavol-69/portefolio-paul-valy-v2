@@ -27,16 +27,49 @@ $mobile-size: 800px;
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 375px;
   min-height: 100vh;
 }
 
-p {
+body::-webkit-scrollbar {
+  display: none;
+}
+
+p,
+h1 {
   margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Atkinson Hyperlegible Mono;
+  font-weight: 300;
+  color: $wht;
+  text-shadow: 2px 2px 2px $prm;
 }
 
 .elm_ct {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  align-items: center;
+  background-color: $blk;
+  border: 1px solid $prm;
+  border-radius: 10px;
+  color: $wht;
+  cursor: pointer;
+  font-size: 1.5em;
+  height: 30px;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s;
+  width: 200px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: $prm;
 }

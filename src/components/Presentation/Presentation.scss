@@ -1,0 +1,38 @@
+@use "../../index.scss" as *;
+
+.pres_ctn {
+  gap: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.pres_ctn img {
+  width: 35vw;
+  height: auto;
+  max-height: 400px;
+  max-width: 400px;
+  min-width: 300px;
+  border-radius: 50%;
+  border: solid 1px $prm;
+}
+
+.pres_ctn p {
+  border: 1px solid $prm;
+  border-radius: 20px;
+  font-size: 1.3em;
+  height: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  padding: 40px;
+}
+
+@media (max-width: $mobile-size) {
+  .pres_ctn {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .pres_ctn p {
+    padding: 20px;
+  }
+}
