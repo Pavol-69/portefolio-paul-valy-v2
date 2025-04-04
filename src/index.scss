@@ -36,7 +36,8 @@ body::-webkit-scrollbar {
 }
 
 p,
-h1 {
+h1,
+h3 {
   margin: 0;
 }
 
@@ -46,6 +47,12 @@ h1 {
   font-weight: 300;
   color: $wht;
   text-shadow: 2px 2px 2px $prm;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-family: Atkinson Hyperlegible Mono;
+  font-weight: 300;
 }
 
 .elm_ct {

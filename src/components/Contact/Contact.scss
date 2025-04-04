@@ -1,0 +1,29 @@
+@use "../../index.scss" as *;
+
+.contact_ctn {
+  margin: 20px auto;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_contact .MuiInputBase-input,
+.input_contact .MuiInputLabel-root,
+.input_contact .MuiSelect-icon {
+  color: $wht;
+}
+
+.input_contact .MuiOutlinedInput-notchedOutline {
+  border-color: $prm;
+}
+
+.input_contact .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: $prm !important;
+  border-width: 2px;
+}
+
+.input_contact
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: $prm !important;
+}

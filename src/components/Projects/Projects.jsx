@@ -12,7 +12,7 @@ function Projects() {
   return (
     <section className="projects_ctn elm_ct">
       {projects.map((project, index) => (
-        <div className="project" key={index}>
+        <article className="project" key={index}>
           {project.openClassromm ? (
             <img
               className="openclassroom"
@@ -54,7 +54,7 @@ function Projects() {
               Github
             </a>
           </div>
-        </div>
+        </article>
       ))}
       {showModal ? (
         <Modal content={content} setShowModal={setShowModal} />

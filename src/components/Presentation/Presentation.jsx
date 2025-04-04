@@ -5,7 +5,7 @@ import profilImg from "../../assets/images/photo_profil2.jpg";
 
 function Presentation() {
   return (
-    <div className="pres_ctn elm_ct">
+    <section className="pres_ctn elm_ct">
       <img alt="photo profil" src={profilImg} />
       <p>
         Bonjour, et bienvenue sur mon portefolio. Je m'appelle Paul Valy, j'ai
@@ -22,7 +22,7 @@ function Presentation() {
         me permettront de surmonter les défis rencontrés et de m'épanouir dans
         ce nouvel univers professionnel.
       </p>
-    </div>
+    </section>
   );
 }
 

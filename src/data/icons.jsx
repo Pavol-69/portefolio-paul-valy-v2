@@ -41,3 +41,26 @@ export const icons = {
   vba: { logo: vba, type: "langages" },
   vsc: { logo: vsc, type: "logiciels" },
 };
+
+export const icons_list = [
+  icons.catia,
+  icons.cpp,
+  icons.css,
+  icons.express,
+  icons.firebase,
+  icons.git,
+  icons.heroku,
+  icons.html,
+  icons.jest,
+  icons.js,
+  icons.matlab,
+  icons.mongodb,
+  icons.nodejs,
+  icons.office,
+  icons.openclassroom,
+  icons.psql,
+  icons.react,
+  icons.redux,
+  icons.vba,
+  icons.vsc,
+];
