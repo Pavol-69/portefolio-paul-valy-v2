@@ -14,16 +14,25 @@
   min-width: 300px;
   border-radius: 50%;
   border: solid 1px $prm;
+  object-fit: cover;
 }
 
-.pres_ctn p {
+.pres_txt {
   border: 1px solid $prm;
   border-radius: 20px;
   font-size: 1.3em;
   height: 100%;
   max-width: 800px;
   min-width: 300px;
-  padding: 40px;
+  padding: 20px 20px 10px 20px;
+}
+
+.pres_txt p {
+  margin-bottom: 10px;
+}
+
+.pres_txt span {
+  color: $prm;
 }
 
 @media (max-width: $mobile-size) {

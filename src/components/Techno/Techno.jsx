@@ -11,7 +11,7 @@ function Techno() {
         <article key={index}>
           <div className="techno_header elm_ct">
             <div className="left_line" />
-            <h3>{techno.toLowerCase()}</h3>
+            <h3>{techno}</h3>
             <div className="right_line" />
           </div>
           <div className="icons_ctn elm_ct">
