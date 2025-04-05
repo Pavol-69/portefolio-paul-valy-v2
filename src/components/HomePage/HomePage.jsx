@@ -12,18 +12,31 @@ import Techno from "../Techno/Techno";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 
+import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
+
 function HomePage() {
+  const refPresentation = useRef();
+  const refProject = useRef();
+  const refTechnos = useRef();
+  const refContact = useRef();
   return (
     <>
-      <Header headerProps={headerProps} mobile={true} />
+      <Header
+        headerProps={headerProps}
+        mobile={useMediaQuery({
+          query: "(max-width: 800px)",
+        })}
+        refList={["", refPresentation, refProject, refTechnos, refContact]}
+      />
       <Title />
-      <SectionTitle name={"Présentation"} />
+      <SectionTitle name={"Présentation"} ref={refPresentation} />
       <Presentation />
-      <SectionTitle name={"Projets"} />
+      <SectionTitle name={"Projets"} ref={refProject} />
       <Projects />
-      <SectionTitle name={"Technologies"} />
+      <SectionTitle name={"Technologies"} ref={refTechnos} />
       <Techno />
-      <SectionTitle name={"Me contacter"} />
+      <SectionTitle name={"Me contacter"} ref={refContact} />
       <Contact />
       <Footer />
     </>

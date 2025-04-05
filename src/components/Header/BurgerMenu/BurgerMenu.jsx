@@ -9,6 +9,7 @@ function BurgerMenu({
   setBurgerOpened,
   firstClick,
   setFirstClick,
+  refList,
 }) {
   return (
     <>
@@ -28,7 +29,7 @@ function BurgerMenu({
             key={index}
             onClick={() => {
               setBurgerOpened(false);
-              btn.function();
+              btn.function(refList[index], -80);
             }}
           >
             {btn.name}

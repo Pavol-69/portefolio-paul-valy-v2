@@ -2,31 +2,41 @@ export const headerProps = [
   {
     name: "Accueil",
     function: () => {
-      console.log("Accueil");
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
   {
     name: "Présentation",
-    function: () => {
-      console.log("Présenation");
+    function: (ref, rectif) => {
+      scroll(ref, rectif);
     },
   },
   {
     name: "Projets",
-    function: () => {
-      console.log("Projets");
+    function: (ref, rectif) => {
+      scroll(ref, rectif);
     },
   },
   {
     name: "Technologies",
-    function: () => {
-      console.log("Technologies");
+    function: (ref, rectif) => {
+      scroll(ref, rectif);
     },
   },
   {
     name: "Contact",
-    function: () => {
-      console.log("Contact");
+    function: (ref, rectif) => {
+      scroll(ref, rectif);
     },
   },
 ];
+
+function scroll(ref, rectif) {
+  window.scrollTo({
+    top: ref.current.offsetTop + rectif,
+    behavior: "smooth",
+  });
+}

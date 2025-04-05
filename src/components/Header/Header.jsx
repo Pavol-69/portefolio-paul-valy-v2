@@ -6,7 +6,7 @@ import ClassicMenu from "./ClassicMenu/ClassicMenu";
 
 import { useState } from "react";
 
-function Header({ headerProps, mobile }) {
+function Header({ headerProps, mobile, refList }) {
   const [burgerOpened, setBurgerOpened] = useState(false);
   const [firstClick, setFirstClick] = useState(false); // pour éviter de lancer l'animation à l'ouverture de la page
   return (
@@ -24,9 +24,10 @@ function Header({ headerProps, mobile }) {
           burgerOpened={burgerOpened}
           firstClick={firstClick}
           setFirstClick={setFirstClick}
+          refList={refList}
         />
       ) : (
-        <ClassicMenu headerProps={headerProps} />
+        <ClassicMenu headerProps={headerProps} refList={refList} />
       )}
     </header>
   );

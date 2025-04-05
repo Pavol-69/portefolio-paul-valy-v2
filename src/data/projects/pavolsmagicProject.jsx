@@ -20,6 +20,7 @@ export const pavolMagicProject = {
   openClassromm: false,
   description: (
     <>
+      <h1>Description</h1>
       <p>
         Premier site réalisé, fait une première fois avec juste HTML / CSS / JS,
         puis refait une seconde fois sous React.

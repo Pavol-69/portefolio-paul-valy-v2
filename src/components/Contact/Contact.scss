@@ -4,7 +4,11 @@
   margin: 20px auto;
   padding: 20px;
   flex-direction: column;
-  gap: 20px;
+  max-width: 800px;
+}
+
+.MuiInputBase-root {
+  width: 500px !important;
 }
 
 .input_contact .MuiInputBase-input,
@@ -26,4 +30,28 @@
   .MuiOutlinedInput-root.Mui-focused
   .MuiOutlinedInput-notchedOutline {
   border-color: $prm !important;
+}
+
+.input_error .MuiOutlinedInput-notchedOutline {
+  border-color: red !important;
+  border-width: 2px;
+}
+
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: $prm !important;
+}
+
+#input_message {
+  height: 200px !important;
+}
+
+.MuiFormHelperText-root {
+  color: red !important;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: $mobile-size) {
+  .MuiInputBase-root {
+    width: 300px !important;
+  }
 }
