@@ -5,6 +5,8 @@
   gap: 50px;
   max-width: 1000px;
   margin: 50px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .project {
@@ -41,6 +43,7 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
+  border-radius: 3px;
 }
 
 .project_menu {
@@ -64,6 +67,16 @@
   left: 20px;
   width: 100px;
   border-radius: 10px;
+}
+
+.img_modal {
+  width: 100%;
+  margin: 20px;
+}
+
+.project_name {
+  text-align: center;
+  padding: 0px 10px;
 }
 
 @media (max-width: $mobile-size) {

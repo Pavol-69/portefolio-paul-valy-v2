@@ -10,7 +10,7 @@ function Projects() {
   const [showModal, setShowModal] = useState(false);
   const [content, setContent] = useState("");
   return (
-    <section className="projects_ctn elm_ct">
+    <section className="projects_ctn">
       {projects.map((project, index) => (
         <article className="project" key={index}>
           {project.openClassromm ? (
@@ -23,7 +23,7 @@ function Projects() {
           <div className="project_img_ctn">
             <img alt={`image projet ${project.name}`} src={project.image} />
           </div>
-          <h2 className="elm_ct">{project.name}</h2>
+          <h2 className="project_name elm_ct">{project.name}</h2>
           <div className="tools_ctn elm_ct">
             {project.tools.map((tool, index_tool) => (
               <div className="tool_ctn" key={index_tool}>
@@ -42,17 +42,15 @@ function Projects() {
               Détails
             </div>
             {project.site != "" ? (
-              <a
-                className="project_btn elm_ct"
-                target="_blank"
-                href={project.site}
-              >
-                site web
+              <a className="btn elm_ct" target="_blank" href={project.site}>
+                Site web
               </a>
             ) : null}
-            <a className="btn elm_ct" target="_blank" href={project.github}>
-              Github
-            </a>
+            {project.github != "" ? (
+              <a className="btn elm_ct" target="_blank" href={project.github}>
+                Github
+              </a>
+            ) : null}
           </div>
         </article>
       ))}

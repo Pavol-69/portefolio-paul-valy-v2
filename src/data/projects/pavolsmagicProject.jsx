@@ -21,14 +21,18 @@ export const pavolMagicProject = {
   description: (
     <>
       <h1>Description</h1>
+      <img className="img_modal" src={pavolMagic} />
       <p>
         Premier site réalisé, fait une première fois avec juste HTML / CSS / JS,
         puis refait une seconde fois sous React.
         <br />
         <br />
-        Fan du jeu de cartes Magic The Gathering, mon but ici était de
-        m'inspirer du site <a href="https://www.archidekt.com">Archidekt</a>, un
-        site que j'aime beaucoup. <br />
+        Fan du jeu de cartes Magic The Gathering, je souhaitais m'inspirer du
+        site{" "}
+        <a target="_blank" href="https://www.archidekt.com">
+          Archidekt
+        </a>
+        , un site que j'aime beaucoup. <br />
         <br />
         Mon but ici était d'apprendre le plus de choses possible, que ce soit en
         FrontEnd ou en BackEnd, en créant un site 100% fonctionnel. J'ai donc
