@@ -1,0 +1,34 @@
+@use "../../../index.scss" as *;
+
+.btn_dwl {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 30px;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  border: solid 1px $prm;
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $wht;
+  gap: 5px;
+}
+
+.btn_dwl:hover {
+  background-color: $prm;
+}
+
+#case_icon_dwl {
+  position: relative;
+  padding-left: 10px;
+  width: 20px;
+}
+
+#icon_dwl {
+  position: absolute;
+  left: 0px;
+  top: -10px;
+}

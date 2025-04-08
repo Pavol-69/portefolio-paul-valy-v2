@@ -3,6 +3,7 @@ import "../../index.scss";
 
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import ClassicMenu from "./ClassicMenu/ClassicMenu";
+import CVButton from "./CVButton/CVButton";
 
 import { useState } from "react";
 
@@ -17,6 +18,7 @@ function Header({ headerProps, mobile, refList }) {
       onBlur={() => setBurgerOpened(false)}
       tabIndex="0"
     >
+      <CVButton />
       {mobile ? (
         <BurgerMenu
           headerProps={headerProps}
