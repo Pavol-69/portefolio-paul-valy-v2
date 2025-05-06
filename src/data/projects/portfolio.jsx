@@ -1,10 +1,10 @@
 import { icons } from "../icons";
 
-import portefolio from "../../assets/projects/portefolio.png";
+import portfolio from "../../assets/projects/portefolio.png";
 
-export const portefolioProject = {
-  name: "PorteFolio Paul Valy",
-  image: portefolio,
+export const portfolioProject = {
+  name: "PortFolio Paul Valy",
+  image: portfolio,
   github: "https://github.com/Pavol-69/portefolio-paul-valy-v2/",
   site: "https://portefolio-paul-valy.web.app/",
   tools: [
@@ -19,8 +19,8 @@ export const portefolioProject = {
   description: (
     <>
       <h1>Description</h1>
-      <img className="img_modal" src={portefolio} />
-      <p>Mon portefolio, que vous êtes actuellement en train de parcourir !</p>
+      <img className="img_modal" src={portfolio} />
+      <p>Mon portfolio, que vous êtes actuellement en train de parcourir !</p>
     </>
   ),
 };

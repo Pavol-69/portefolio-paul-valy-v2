@@ -1,6 +1,6 @@
 export const presentationText = (
   <>
-    <p>Bonjour, et bienvenue sur mon portefolio.</p>
+    <p>Bonjour, et bienvenue sur mon portfolio.</p>
     <p>
       Je m'appelle <span>Paul Valy</span>, j'ai 33 ans, et je suis à le
       recherche d'opportunités pour un poste de <span>Développeur Web</span>.

@@ -11,7 +11,7 @@ import { OCProject7AppWebReactEtReactRouter } from "./projects/OC-Project7-AppWe
 import { OCProject8TableaudeBordAnlyticsAvecReact } from "./projects/OC-Project8-TableaudeBordAnlyticsAvecReact";
 import { OCProject9APIPourCompteUtilisateurBancaireAvecReact } from "./projects/OC-Project9-APIPourCompteUtilisateurBancaireAvecReact";
 import { OCProject10FairePasserLibrairieDeJQueryAReact } from "./projects/OC-Project10-FairePasserLibrairieDeJQueryAReact";
-import { portefolioProject } from "./projects/portefolio";
+import { portfolioProject } from "./projects/portfolio";
 
 export const projects = [
   macroVbaProject,
@@ -27,5 +27,5 @@ export const projects = [
   OCProject8TableaudeBordAnlyticsAvecReact,
   OCProject9APIPourCompteUtilisateurBancaireAvecReact,
   OCProject10FairePasserLibrairieDeJQueryAReact,
-  portefolioProject,
+  portfolioProject,
 ];
